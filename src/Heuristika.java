@@ -32,8 +32,8 @@ public class Heuristika {
     }
 
     public void spustiHeuristiku() {
-        Predmet predmetSNajvacsouCenou = this.predmetyVBatohu.getFirst();
         while (true) {
+            Predmet predmetSNajvacsouCenou = this.predmetyVBatohu.get(0);
             for (Predmet p : predmetyVBatohu) {
                 if (p.getCenaPredmetu() > predmetSNajvacsouCenou.getCenaPredmetu()) {
                     predmetSNajvacsouCenou = p;
